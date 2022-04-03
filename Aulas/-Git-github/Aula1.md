@@ -42,6 +42,7 @@ O git é um CLI
 | echo content > arquivo                   | escreve o content no arquivo               |
 | del workspace                            | deleta só os arquivos dentro dela          |
 | rmdir /S /Q \ rmdir -rf                  | remove o diretório e tudo o que tem dentro |
+| mv                                       | move algo                                  |
 
 | flag (sistema) | função                           |
 | -------------- | -------------------------------- |
@@ -50,6 +51,7 @@ O git é um CLI
 | -r             | recursive                        |
 | -force         | forçado, sem mensagem de erro    |
 | -rf            | deleta tudo sem mensagem de erro |
+| -a             | mostra ocultos                   |
 
 ## Conceito fundamental, por baixo dos panos
 
