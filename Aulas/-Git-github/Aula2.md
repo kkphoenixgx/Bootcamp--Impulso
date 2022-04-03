@@ -11,6 +11,7 @@ Comandos git
 | git commit "mensagem"          | começar o versionamento                |
 | git status                     | mostra os arquivos da three            |
 | git restore                    | restaura o(s) arquivo(s)               |
+| git remote -v                  | lista de repositórios remotos          |
 
 | flag           | significado          |
 | -------------- | -------------------- |
@@ -29,8 +30,12 @@ Sendo y email
 ## Na configuração do projeto
 
 * git init
+* crie o repositório no github
+* copia o link
+* git remote add origin 'link'
 
 ## No uso diário
 
 * git add (* para todos os arquivos)
 * git commit -m "mensagem que quiser"
+* git push origin (branch)
