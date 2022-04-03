@@ -62,3 +62,29 @@ E podemos usar o openssl1, que é o comando do programa da segurança nacional d
  > openssl sha1 pathDoArquivo
 
 E esse git com esse hash de 40 dígitos é guardado em um objeto chamado blob(bolha), que é uma sequencia de caracteres composta por ('número de caracteres' + hash de: ('9 \0' *+* **'arquivo'**) )  que por sua vez, as bolhas são guardadas em uma three(árvore) que guarda esses objetos blobs, o nome do arquivo e o path, apontando só para a próxima bolha e por cima de tudo, temos o commit, que aposta para a three, o parente, para o autor, uma mensagem e um timestamp e o mais forte de tudo é que os commits também tem hash, ou seja, qualquer coisa qua você mudar, gera outro sha1
+
+## Chave ssh ssh
+
+Siga os passos
+
+* ssh-keygen -t ed(yourCode)
+* digite a senha
+* cd (path que deu na mensagem)
+* cat public key( id_ed(code).pub, escreve id_ed, dá um tab e digita .pub se não tiver )
+* copia o código e adiciona no ssh no site do github
+* eval $(ssh-agent -s)
+* ssh id_ed(ourCode)
+* digite a senha
+
+Tudo certo, para testar clona um a past ai com **git clone** path
+
+## Token de acesso pessoal
+
+Não vale muito a pena fazer... Mas se você for ficar somente um tempo com a maquina em questão, faça-o
+
+* vá no site do github -> settings -> developer settings -> personal access token ->
+* coloca o número de dias que você va ficar com essa chave
+* clica em repo, bota o nome e gera
+* **copia o token**
+
+se quiser da um clone e usa um https e coloca esse token no pop-up que vai abrir, esse token só vai valer até o tempo escolhido
